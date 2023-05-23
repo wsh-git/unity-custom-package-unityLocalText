@@ -1,0 +1,20 @@
+{
+  "name": "com.wshunity.localtext",
+  "displayName": "Wsh Unity LocalText",
+  "version": "0.0.1",
+  "unity": "2017.2",
+  "keywords": [
+    "Local Text"
+  ],
+  "description": "This is a very base local text.",
+  "repository": {
+    "url": "https://github.com/wsh-git/unity-custom-package-unityLocalText.git",
+    "type": "git",
+    "revision": "9d824e3aeca574022eff896b9c751097dadd0619"
+  },
+  "author": {
+    "name": "wshunity",
+    "email": "",
+    "url": ""
+  }
+}
