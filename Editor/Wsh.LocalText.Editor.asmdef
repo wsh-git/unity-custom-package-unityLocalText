@@ -2,9 +2,11 @@
     "name": "Wsh.LocalText.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:b8afc3a4665106e4da09d282f29c54a4"
+        "Wsh.LocalText"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
