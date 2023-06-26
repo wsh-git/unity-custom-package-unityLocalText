@@ -27,6 +27,7 @@ namespace Wsh.LocalText {
 
     [CreateAssetMenu(fileName = "LocalTextConfigDefine", menuName = "Custom/ScriptableObject/LocalTextConfigDefine")]
     public class LocalTextConfigDefine : ScriptableObject {
+        public string GenerateCSharpPath;
         public List<LocalTextDataDefineClass> LocalTextDataDefine = new List<LocalTextDataDefineClass>();
     }
 }
