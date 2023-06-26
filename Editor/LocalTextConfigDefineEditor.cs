@@ -61,14 +61,14 @@ namespace Wsh.LocalText {
 
             stringBuilder.Append("//Automatically generated, do not manually modify it!!!\n\n");
             stringBuilder.Append("namespace Wsh.LocalText {\n\n");
-            stringBuilder.Append("    public class LocalTextPath {\n");
+            stringBuilder.Append("    public class LocalTextId {\n");
             
             for(int i = 0; i < define.LocalTextDataDefine.Count; i++) {
                 GenerateVar(stringBuilder, define.LocalTextDataDefine[i].key);
             }
             stringBuilder.Append("    }\n\n");
             stringBuilder.Append("}");
-            string path = Path.Combine(Application.dataPath, define.GenerateCSharpPath, "LocalTextPath.cs");
+            string path = Path.Combine(Application.dataPath, define.GenerateCSharpPath, "LocalTextId.cs");
             File.WriteAllText(path, stringBuilder.ToString());
             AssetDatabase.Refresh();
         }
