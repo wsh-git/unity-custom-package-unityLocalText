@@ -68,9 +68,8 @@ namespace Wsh.LocalText {
             return string.Empty;
         }
 
-        private void SetTextComponentInfo(Text textComponent, string text, int fontSize) {
+        private void SetTextComponentInfo(Text textComponent, string text) {
             textComponent.text = text;
-            textComponent.fontSize = fontSize;
         }
 
         public void SetText(Text textComponent, string localTextKey) {
@@ -78,10 +77,10 @@ namespace Wsh.LocalText {
                 var define = m_dicLocalText[localTextKey];
                 switch(m_languageType) {
                     case LanguageType.CN:
-                        SetTextComponentInfo(textComponent, define.cn.text, define.cn.fontSize);
+                        SetTextComponentInfo(textComponent, define.cn.text);
                     break;
                     case LanguageType.EN:
-                        SetTextComponentInfo(textComponent, define.en.text, define.en.fontSize);
+                        SetTextComponentInfo(textComponent, define.en.text);
                     break;
                     default:
                         

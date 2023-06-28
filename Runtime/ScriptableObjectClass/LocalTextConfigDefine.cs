@@ -7,15 +7,6 @@ namespace Wsh.LocalText {
     [Serializable]
     public class LocalTextContent {
         public string text;
-        public int fontSize;
-    }
-
-    [Serializable]
-	public class LocalTextDataOldDefineClass {
-        public string cn;
-        public int cnFontSize;
-        public string en;
-        public int enFontSize;
     }
 
     [Serializable]
